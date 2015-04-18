@@ -22,12 +22,16 @@
 
     <!-- Used for API cards to describe which API example will be triggered. -->
     <string name="text_card_builder">CardBuilder API examples</string>
-    <string name="text_card_builder_embedded_layout">CardBuilder with embedded layout example</string>
+    <string name="text_card_builder_embedded_layout">CardBuilder with embedded layout example by Hector</string>
     <string name="text_card_scroll_view">CardScrollView API examples</string>
     <string name="text_gesture_detector">GestureDetector API examples</string>
     <string name="text_text_appearance">Text appearance examples</string>
     <string name="text_voice_menu">Voice menu</string>
     <string name="text_slider">Slider</string>
+
+
+    <string name="captone_clan_tag">June Capstone</string>
+
 
     <!-- Used as content for cards in the CardBuilder API examples. -->
     <string name="text_card_footnote">This is the footnote</string>

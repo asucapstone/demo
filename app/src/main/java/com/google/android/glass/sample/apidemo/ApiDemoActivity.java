@@ -69,6 +69,10 @@ public class ApiDemoActivity extends Activity {
     static final int VOICE_MENU = 6;
     static final int SLIDER = 7;
 
+    //CAPSTONE ADDITION
+    static final int CAPSTONE_CAPTURE = 8;
+
+
     private CardScrollAdapter mAdapter;
     private CardScrollView mCardScroller;
 
@@ -93,6 +97,12 @@ public class ApiDemoActivity extends Activity {
      */
     private List<CardBuilder> createCards(Context context) {
         ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
+
+        //Capstone addition
+        cards.add(CARD_BUILDER, new CardBuilder(context, CardBuilder.Layout.TEXT)
+                .setText(R.string.captone_clan_tag));
+
+
         cards.add(CARD_BUILDER, new CardBuilder(context, CardBuilder.Layout.TEXT)
                 .setText(R.string.text_card_builder));
         cards.add(CARD_BUILDER_EMBEDDED_LAYOUT, new CardBuilder(context, CardBuilder.Layout.TEXT)
@@ -169,6 +179,11 @@ public class ApiDemoActivity extends Activity {
 
                     case SLIDER:
                         startActivity(new Intent(ApiDemoActivity.this, SliderActivity.class));
+                        break;
+                    //capstone additon
+                    case CAPSTONE_CAPTURE:
+                        //https://developers.google.com/glass/develop/gdk/camera
+                        startActivity(new Intent(ApiDemoActivity.this, VoiceMenuActivity.class));
                         break;
 
                     default:
