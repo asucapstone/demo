@@ -19,13 +19,15 @@ package com.google.android.glass.sample.apidemo;
 import com.google.android.glass.sample.apidemo.card.CardsActivity;
 import com.google.android.glass.sample.apidemo.theming.ThemingActivity;
 import com.google.android.glass.sample.apidemo.touchpad.SelectGestureDemoActivity;
+import com.eyetechds.quicklink.QLCalibrationType;
 
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.SmallTest;
 
-/**
+/*
+ *
  * Unit tests for {@link ApiDemoActivity}.
  */
 @SmallTest
