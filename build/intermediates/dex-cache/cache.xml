@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Hector/AndroidDev/demo/app/libs/quicklinklib.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0cff71c4d8a3f09c209b92d1bc2db5fce73737af">
+        <dex dex="/Users/Hector/AndroidDev/demo/app/build/intermediates/pre-dexed/debug/quicklinklib-92b19d89bb4f0b98de83224ab52f1d3b4a6f80c5.jar" />
+    </item>
+
+</items>

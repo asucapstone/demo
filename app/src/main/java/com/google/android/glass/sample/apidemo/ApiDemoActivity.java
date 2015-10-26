@@ -29,6 +29,7 @@ import com.google.android.glass.sample.apidemo.voicemenu.VoiceMenuActivity;
 import com.google.android.glass.widget.CardBuilder;
 import com.google.android.glass.widget.CardScrollAdapter;
 import com.google.android.glass.widget.CardScrollView;
+import com.google.android.glass.sample.apidemo.cards.imotion.*;
 
 import android.app.Activity;
 import android.content.Context;
@@ -38,10 +39,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.eyetechds.quicklink.*;
 /**
  * Creates a card scroll view with examples of different GDK APIs.
  *
@@ -54,6 +56,7 @@ import java.util.List;
  * <li> VoiceMenu
  * </ol>
  */
+
 public class ApiDemoActivity extends Activity {
 
     private static final String TAG = ApiDemoActivity.class.getSimpleName();
@@ -75,6 +78,7 @@ public class ApiDemoActivity extends Activity {
 
     private CardScrollAdapter mAdapter;
     private CardScrollView mCardScroller;
+    private int imotion ;
 
     // Visible for testing.
     CardScrollView getScroller() {
@@ -96,6 +100,7 @@ public class ApiDemoActivity extends Activity {
      * Create list of API demo cards.
      */
     private List<CardBuilder> createCards(Context context) {
+
         ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
 
         //Capstone addition
@@ -184,6 +189,8 @@ public class ApiDemoActivity extends Activity {
                     case CAPSTONE_CAPTURE:
                         //https://developers.google.com/glass/develop/gdk/camera
                         startActivity(new Intent(ApiDemoActivity.this, VoiceMenuActivity.class));
+                        //Fragment eyeControlFragment
+
                         break;
 
                     default:
